@@ -18,6 +18,12 @@ public class GlobalObjectPool : ScriptableObject
         return _objectPool.Get();
     }
 
+    public void Release(Gameobject obj)
+    {
+        obj.SetActive(false);
+        _objectPool.Release(obj);
+    }
+
     GameObject AddToPool()
     {
         var shot = Instantiate(_pooledPrefab, null);

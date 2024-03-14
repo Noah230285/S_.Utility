@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Cinemachine.Utility;
+using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace _S.Utility
 {
@@ -6,10 +8,86 @@ namespace _S.Utility
     {
         public static Vector2 AngleToVector2(float angle)
         {
-            return new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
+            return new Vector2(Mathf.Sin(angle * Mathf.Deg2Rad), Mathf.Cos(angle * Mathf.Deg2Rad));
         }
 
+        public static Vector3 AngleToVector3(float angle)
+        {
+            return AngleToVector3(angle, Vector3.up);
+        }
 
+        public static Vector3 AngleToVector3(float angle, Vector3 upAxis)
+        {
+            Vector2 vector2 = AngleToVector2(angle);
+            return Vector3.ProjectOnPlane(new Vector3(vector2.x, 0, vector2.y), upAxis);
+        }
+
+        public static float PositiveSignedAngle(Vector3 from, Vector3 to, Vector3 axis)
+        {
+            float angle = Vector3.SignedAngle(from, to, axis);
+            return angle < 0 ? (-angle) : 360 - angle;
+        }
+
+        public static float ClampAngle(float value, float min, float max, bool clampEdges = false)
+        {
+            value = Mathf.Repeat(value, 360f);
+            min = Mathf.Repeat(min, 360f);
+            max = Mathf.Repeat(max, 360f);
+            float midPoint = min > max ? (max - min) / 2 : (360 - min + max) / 2;
+            float offset = clampEdges ? Mathf.DeltaAngle(midPoint + min, 180) : 0;
+
+            value = Mathf.Repeat(value + offset, 360f);
+            min = Mathf.Repeat(min + offset, 360f);
+            max = Mathf.Repeat(max + offset, 360f);
+
+            if (min > max)
+            {
+                return InverseClamp(value, max, min) - offset;
+            }
+            return Mathf.Clamp(value, min, max) - offset;
+        }
+
+        public static float MoveTowardsClampedAngle(float current, float target, float min, float max, float maxDelta)
+        {
+            target = ClampAngle(target, min, max, true);
+            float num = Mathf.DeltaAngle(current, target);
+            float toAngle = ClampAngle(current + num, min, max);
+            float adjustedMax = max < current ? max + 360 : max;
+
+            if (toAngle > adjustedMax)
+            {
+                num = -(360 - num);
+            }
+
+            float adjustedMin = min > current ? min - 360 : min;
+            if (toAngle < adjustedMin)
+            {
+                num = 360 + num;
+            }
+            //Debug.DrawRay(Vector3.up, AngleToVector3(current), Color.red);
+            //Debug.DrawRay(Vector3.up, AngleToVector3(target), Color.green);
+            //Debug.DrawRay(Vector3.up, AngleToVector3(num), Color.blue);
+            //Debug.DrawRay(Vector3.up, AngleToVector3(min), Color.magenta);
+            //Debug.DrawRay(Vector3.up, AngleToVector3(max), Color.black);
+
+            if (0f - maxDelta < num && num < maxDelta)
+            {
+                return target;
+            }
+
+            target = current + num;
+            return Mathf.MoveTowards(current, target, maxDelta);
+        }
+
+        public static float InverseClamp(float value, float min, float max)
+        {
+            if (value > min && value < max)
+            {
+                float mid = (max - min) / 2 + min;
+                return value < mid ? min : max;
+            }
+            return value;
+        }
         public static Vector3 XY(this Vector3 v)
         {
             return new Vector3(v.x, v.y, 0);
