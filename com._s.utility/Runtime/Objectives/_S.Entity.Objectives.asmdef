@@ -1,0 +1,19 @@
+{
+    "name": "_S.Entity.Objectives",
+    "rootNamespace": "",
+    "references": [
+        "GUID:993a436f5e078ff40a75ebbbc68a52a7",
+        "GUID:d7e4fe2fca6572c409868c72527906c0",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:19bd06280bdd5a846ab2848afd5f6345"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

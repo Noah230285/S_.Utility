@@ -1,0 +1,20 @@
+{
+    "name": "_S.Entity.Weapons",
+    "rootNamespace": "",
+    "references": [
+        "GUID:25e60c332d85dfd43a69c834fab418b0",
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5",
+        "GUID:3b5e780c7ab94b04587c51bff3c3c912",
+        "GUID:9789f799fe1074544a591d72b31e2b00",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

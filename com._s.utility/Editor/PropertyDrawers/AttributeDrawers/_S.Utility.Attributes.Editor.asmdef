@@ -1,0 +1,18 @@
+{
+    "name": "_S.Utility.Attributes.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:993a436f5e078ff40a75ebbbc68a52a7",
+        "GUID:c7f54ac0ccea45545be4c04564d25796",
+        "GUID:54cb1906aeb4e4264bc1d2aa3818a43f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

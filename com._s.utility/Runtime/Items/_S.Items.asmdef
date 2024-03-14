@@ -1,0 +1,19 @@
+{
+    "name": "_S.Items",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3ea30db73cea9fc4d812f5b80c2cc18e",
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5",
+        "GUID:25e60c332d85dfd43a69c834fab418b0",
+        "GUID:9789f799fe1074544a591d72b31e2b00"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

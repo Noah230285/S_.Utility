@@ -1,0 +1,20 @@
+{
+    "name": "_S.Entity.AI",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d7e4fe2fca6572c409868c72527906c0",
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5",
+        "GUID:9789f799fe1074544a591d72b31e2b00",
+        "GUID:6593ea1ed39adbb428329d944d23394f",
+        "GUID:78db972cc27555241b3652c950c4de87"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

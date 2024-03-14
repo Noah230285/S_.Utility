@@ -1,0 +1,22 @@
+{
+    "name": "_S.Utility.ScriptableObjects.Variables.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5",
+        "GUID:54cb1906aeb4e4264bc1d2aa3818a43f",
+        "GUID:657afcdf9e18b1848a51f5ef6b66a032",
+        "GUID:993a436f5e078ff40a75ebbbc68a52a7",
+        "GUID:c7f54ac0ccea45545be4c04564d25796",
+        "GUID:88cefcbf5c37f8543a18c1ba2199333f",
+        "GUID:19bd06280bdd5a846ab2848afd5f6345"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

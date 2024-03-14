@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.gameinvader.utility/Assets/Editor/UIToolkit/Styles/Main.uss?fileID=7433441132597879392&amp;guid=16655f403de721341a8f519c478f267f&amp;type=3#Main" />
+    <ui:VisualElement style="flex-direction: row; align-items: auto; justify-content: flex-end; flex-basis: auto; width: 100%;">
+        <ui:Button text="&#10;" display-tooltip-when-elided="true" name="ConstantButton" class="customButton">
+            <ui:VisualElement style="background-image: url(&apos;project://database/Packages/com.gameinvader.utility/Assets/Editor/Icons/Locked.png?fileID=2800000&amp;guid=3edd634e5225fc04fa889736e6e0ebe1&amp;type=3#Locked&apos;);" />
+        </ui:Button>
+        <ui:VisualElement name="Content" style="flex-direction: row; flex-grow: 1; display: flex;">
+            <ui:VisualElement name="Connector" style="width: 15px; height: 15px; background-image: url(&apos;project://database/Packages/com.gameinvader.utility/Assets/Editor/Icons/chain.png?fileID=2800000&amp;guid=0b51397de37a69445b7de80036daec31&amp;type=3#chain&apos;); -unity-background-scale-mode: stretch-to-fill; flex-shrink: 0; margin-left: 7px; margin-top: 2px; -unity-background-image-tint-color: rgb(200, 200, 200);" />
+            <uie:ObjectField name="ReferenceField" style="flex-grow: 1; flex-shrink: 1; min-width: 20px; width: auto;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

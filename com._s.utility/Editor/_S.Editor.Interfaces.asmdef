@@ -1,0 +1,17 @@
+{
+    "name": "_S.Editor.Interfaces",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c7f54ac0ccea45545be4c04564d25796",
+        "GUID:07a6031762177e04cb1434c9bbdb22c2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,23 @@
+{
+    "name": "_S.Editor.PropertyDrawers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6593ea1ed39adbb428329d944d23394f",
+        "GUID:3ea30db73cea9fc4d812f5b80c2cc18e",
+        "GUID:54cb1906aeb4e4264bc1d2aa3818a43f",
+        "GUID:d3cc52cb921c2144d9f0bc0b53ca7ef2",
+        "GUID:c7f54ac0ccea45545be4c04564d25796",
+        "GUID:705ae6a95bbd2b94e80edcb3f2e5c9ba",
+        "GUID:657afcdf9e18b1848a51f5ef6b66a032",
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

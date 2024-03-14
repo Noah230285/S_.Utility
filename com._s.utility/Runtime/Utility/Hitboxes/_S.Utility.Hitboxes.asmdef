@@ -1,0 +1,17 @@
+{
+    "name": "_S.Utility.Hitboxes",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9789f799fe1074544a591d72b31e2b00",
+        "GUID:3b5e780c7ab94b04587c51bff3c3c912"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

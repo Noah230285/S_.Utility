@@ -1,0 +1,18 @@
+{
+    "name": "_S.Utility.ScriptableObjects.Variables",
+    "rootNamespace": "",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:d7e4fe2fca6572c409868c72527906c0",
+        "GUID:19bd06280bdd5a846ab2848afd5f6345"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

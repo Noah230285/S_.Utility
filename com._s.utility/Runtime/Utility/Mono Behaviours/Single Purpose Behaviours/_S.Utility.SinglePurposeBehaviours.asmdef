@@ -1,0 +1,18 @@
+{
+    "name": "_S.Utility.SinglePurposeBehaviours",
+    "rootNamespace": "",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:374e1529d6d0065439d6dea5128b9da7",
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

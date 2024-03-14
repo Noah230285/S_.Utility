@@ -1,0 +1,16 @@
+{
+    "name": "_S.Editor.Interfaces.UXML",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c7f54ac0ccea45545be4c04564d25796"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

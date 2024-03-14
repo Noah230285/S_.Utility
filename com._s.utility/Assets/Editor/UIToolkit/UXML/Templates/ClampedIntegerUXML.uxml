@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.gameinvader.utility/Assets/Editor/UIToolkit/Styles/Cooldown.uss?fileID=7433441132597879392&amp;guid=2f1555933bf5e5243a0439d877e1346f&amp;type=3#Cooldown" />
+    <Style src="project://database/Packages/com.gameinvader.utility/Assets/Editor/UIToolkit/Styles/Main.uss?fileID=7433441132597879392&amp;guid=16655f403de721341a8f519c478f267f&amp;type=3#Main" />
+    <ui:VisualElement style="margin-top: 1px; margin-bottom: 1px;">
+        <ui:VisualElement style="width: 100%; flex-direction: row;">
+            <ui:VisualElement style="height: 100%; width: 40px; flex-direction: row-reverse; justify-content: space-between; align-items: flex-end;">
+                <ui:Button text="&#10;" display-tooltip-when-elided="true" focusable="false" name="OptionsButton" class="customButton" style="position: relative; margin-bottom: 4px; margin-top: -1px; padding-top: 1px;">
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Packages/com.gameinvader.utility/Assets/Editor/Icons/options.png?fileID=2800000&amp;guid=9773b4acd947d35448242ad5438c39ec&amp;type=3#options&apos;);" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between; align-items: flex-end; width: auto;">
+                <ui:VisualElement style="justify-content: flex-end; align-items: center; flex-grow: 1; flex-shrink: 0;">
+                    <ui:Label text="Resource Text" display-tooltip-when-elided="true" name="Title" style="-unity-text-align: upper-center;" />
+                    <ui:ProgressBar title="Error" name="interactableProgressBar" low-value="0" high-value="1" style="flex-grow: 1; flex-shrink: 0; flex-direction: column; flex-basis: auto; align-items: stretch; justify-content: center; width: 100%; opacity: 1; border-left-color: rgb(70, 66, 66); border-right-color: rgb(70, 67, 67); border-top-color: rgb(84, 81, 81); border-bottom-color: rgb(51, 51, 51); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; -unity-font-definition: none;">
+                        <ui:SliderInt picking-mode="Ignore" value="42" high-value="100" class="Slider" />
+                    </ui:ProgressBar>
+                    <uie:FloatField value="0" name="CurrentField" style="position: absolute; left: auto; border-bottom-width: 0; height: 13px; top: 20px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; overflow: visible;" />
+                </ui:VisualElement>
+                <uie:IntegerField label="Max" value="42" name="MaxField" class="maxField smallField" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Options" style="margin-left: 18px; margin-right: 41px;">
+            <Style src="project://database/Packages/com.gameinvader.utility/Assets/Editor/UIToolkit/Styles/Main.uss?fileID=7433441132597879392&amp;guid=16655f403de721341a8f519c478f267f&amp;type=3#Main" />
+            <ui:VisualElement class="panel" style="align-items: stretch; justify-content: center; width: 100%; padding-left: 3px; padding-right: 3px; padding-top: 3px; padding-bottom: 3px; height: auto; overflow: hidden; margin-bottom: 8px;">
+                <ui:Label text="Configuration Options" display-tooltip-when-elided="true" name="Label" class="title" style="-unity-text-align: middle-left;" />
+                <ui:VisualElement style="margin-left: 3px; margin-right: 4px;">
+                    <ui:VisualElement style="height: 1px; width: 95%; position: relative; left: 2.5%; background-color: rgb(38, 38, 38); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; margin-bottom: 3px; margin-top: 3px;" />
+                    <uie:ObjectField label="Change Event" name="EventField" />
+                    <ui:VisualElement style="flex-direction: row;">
+                        <ui:Button display-tooltip-when-elided="true" name="ConstantButton" class="customButton">
+                            <ui:VisualElement style="background-image: url(&apos;project://database/Packages/com.gameinvader.utility/Assets/Editor/Icons/Locked.png?fileID=2800000&amp;guid=3edd634e5225fc04fa889736e6e0ebe1&amp;type=3#Locked&apos;);" />
+                        </ui:Button>
+                        <uie:ObjectField name="ReferenceField" style="flex-grow: 1; flex-shrink: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="align-items: center;">
+                        <ui:VisualElement style="width: 18px; height: 18px; background-image: url(&apos;project://database/Packages/com.gameinvader.utility/Assets/Editor/Icons/chain.png?fileID=2800000&amp;guid=0b51397de37a69445b7de80036daec31&amp;type=3#chain&apos;);" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="margin-left: 7%; margin-right: 7%;">
+                        <_S.Editor.UXMLElements.IntegerReferenceField focusable="true" name="CurrentVariable" />
+                        <_S.Editor.UXMLElements.IntegerReferenceField focusable="true" name="MaxVariable" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

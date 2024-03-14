@@ -1,0 +1,16 @@
+{
+    "name": "_S.Audio",
+    "rootNamespace": "",
+    "references": [
+        "GUID:993a436f5e078ff40a75ebbbc68a52a7"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
