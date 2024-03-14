@@ -1,4 +1,4 @@
-﻿using static UnityEngine.Rendering.DebugUI;
+﻿using UnityEngine;
 
 namespace _S.Utility
 {
