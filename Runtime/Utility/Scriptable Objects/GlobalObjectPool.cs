@@ -18,7 +18,7 @@ public class GlobalObjectPool : ScriptableObject
         return _objectPool.Get();
     }
 
-    public void Release(Gameobject obj)
+    public void Release(GameObject obj)
     {
         obj.SetActive(false);
         _objectPool.Release(obj);
