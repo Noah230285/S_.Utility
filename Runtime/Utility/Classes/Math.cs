@@ -1,6 +1,4 @@
-﻿using Cinemachine.Utility;
-using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
+﻿using static UnityEngine.Rendering.DebugUI;
 
 namespace _S.Utility
 {
