@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.gameinvader.utility/Assets/UIToolkit/USS/Menu%20UI.uss?fileID=7433441132597879392&amp;guid=f4272ee35303873429e50d284fc5ac63&amp;type=3#Menu UI" />
+    <Style src="project://database/Packages/com.gameinvader.utility/Assets/UIToolkit/USS/IconButton.uss?fileID=7433441132597879392&amp;guid=3f6873adce06b2845b00d513a19a1d0a&amp;type=3#IconButton" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" focusable="true" class="iconButton iconButtonBorder">
+        <ui:VisualElement name="Icon" />
+        <ui:VisualElement name="ButtonOverlay" style="-unity-background-scale-mode: scale-to-fit; scale: 4 4;" />
+        <ui:VisualElement class="iconButtonBorder" style="display: none; visibility: hidden;" />
+    </ui:Button>
+</ui:UXML>

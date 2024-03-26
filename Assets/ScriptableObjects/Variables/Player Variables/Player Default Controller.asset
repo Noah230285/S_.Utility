@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac085b086b4a87c4c923dbd32c1ab638, type: 3}
+  m_Name: Player Default Controller
+  m_EditorClassIdentifier: 
+  _movementExtended: 1
+  MoveSpeed: 10
+  MaxSpeed: 20
+  CrouchSpeedMultiplier: 0.5
+  CrouchYOffset: -0.7
+  CrouchSpeed: 9
+  Sensitivity:
+    _useConstant: 1
+    _constantCurrent:
+      _useConstant: 1
+      _constantValue: 0
+      _variable: {fileID: 0}
+    _constantMax:
+      _useConstant: 1
+      _constantValue: 0
+      _variable: {fileID: 0}
+    _variable: {fileID: 0}
+    _eventChannel: {fileID: 0}
+    _configExtended: 0
+  MoveAcceleration: 10
+  ForceDecceleration: 44.5
+  AirAccelerationMultiplier: 0.14
+  _jumpingExtended: 1
+  JumpForceVertical: 1
+  JumpForceHorizontal: 4.5
+  JumpCooldown:
+    Max: 0.025
+    _progress: 0
+    _paused: 0
+    _ticking: 0
+  JumpPressBufferCooldown:
+    Max: 0.15
+    _progress: 0
+    _paused: 0
+    _ticking: 0
+  CoyoteTimeCooldown:
+    Max: 0.2
+    _progress: 0
+    _paused: 0
+    _ticking: 0
+  JumpHoldTimeCooldown:
+    Max: 0.15
+    _progress: 0
+    _paused: 0
+    _ticking: 0
+  JumpGravityMultiplier: -0.3
+  JumpFallGravityMultiplier: 1.5
+  JumpFallVelocity: -7
+  _physicsExtended: 1
+  GravityMultiplier: 3
+  EnemyPushPower: 25.1
+  GroundMask:
+    serializedVersion: 2
+    m_Bits: 278529
+  SlideAngle: 50
+  SliderFriction: 0.4
+  Stepheight: 0.45
+  MinStepDistance: 0.2
+  StepTransitionSpeed: 0

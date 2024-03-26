@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False" class="subMenu">
+    <Style src="project://database/Assets/Menu%20UI.uss?fileID=7433441132597879392&amp;guid=f4272ee35303873429e50d284fc5ac63&amp;type=3#Menu UI" />
+    <ui:Label tabindex="-1" text="Title Text" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+</ui:UXML>

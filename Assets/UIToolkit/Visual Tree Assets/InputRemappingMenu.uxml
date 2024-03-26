@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ButtonWithIcon" src="project://database/Packages/com.gameinvader.utility/Assets/UIToolkit/Visual%20Tree%20Assets/ButtonWithIcon.uxml?fileID=9197481963319205126&amp;guid=033a57b0722744c459995468ee1e2355&amp;type=3#ButtonWithIcon" />
+    <ui:Template name="InputRemapper" src="project://database/Packages/com.gameinvader.utility/Assets/UIToolkit/Visual%20Tree%20Assets/InputRemapper.uxml?fileID=9197481963319205126&amp;guid=2eb1be3cdf42ac84bbbf9d479d29e54f&amp;type=3#InputRemapper" />
+    <Style src="project://database/Assets/Menu%20UI.uss?fileID=7433441132597879392&amp;guid=f4272ee35303873429e50d284fc5ac63&amp;type=3#Menu UI" />
+    <ui:VisualElement style="flex-grow: 1; opacity: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1;">
+            <ui:Instance template="ButtonWithIcon" name="ButtonWithIcon" style="height: 10%;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="width: 52%; margin-left: auto; margin-right: auto; background-color: rgb(52, 72, 69); align-items: stretch; flex-direction: column;">
+            <ui:ScrollView>
+                <_S.UIToolkit.Elements.SubMenuElement title-label="Movement">
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Move Forward" />
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Move Backwards" />
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Move Right" />
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Move Left" />
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Jump" />
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Crouch" />
+                </_S.UIToolkit.Elements.SubMenuElement>
+                <_S.UIToolkit.Elements.SubMenuElement title-label="Combat">
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Primary Fire" />
+                    <_S.UIToolkit.Elements.ButtonRemapperElement input-name="Secondary Fire" />
+                </_S.UIToolkit.Elements.SubMenuElement>
+                <_S.UIToolkit.Elements.SubMenuElement title-label="Misc">
+                    <_S.UIToolkit.Elements.ButtonRemapperElement name="Placeholder Name" input-name="Interact" />
+                </_S.UIToolkit.Elements.SubMenuElement>
+                <_S.UIToolkit.Elements.SubMenuElement title-label="Misc">
+                    <ui:Instance template="InputRemapper" name="InputRemapper" />
+                    <ui:Instance template="InputRemapper" name="InputRemapper" />
+                    <ui:Instance template="InputRemapper" name="InputRemapper" />
+                    <ui:Instance template="InputRemapper" name="InputRemapper" />
+                    <ui:Instance template="InputRemapper" name="InputRemapper" />
+                </_S.UIToolkit.Elements.SubMenuElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1;" />
+    </ui:VisualElement>
+    <ui:VisualElement class="screenOverlay bindingOverlay hidden" style="background-color: rgba(19, 23, 67, 0.44);">
+        <ui:VisualElement style="width: 100%; height: 80%; background-color: rgba(7, 44, 75, 0.46); align-items: center; justify-content: center;">
+            <ui:Label tabindex="-1" text="Rebinding primary input of &apos;Move Forward&apos;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="TopLabel" style="font-size: 59px; color: rgb(255, 255, 255);" />
+            <ui:Label tabindex="-1" text="Press any input to register or esc to cancel" parse-escape-sequences="true" display-tooltip-when-elided="true" name="BottomLabel" style="font-size: 41px; color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

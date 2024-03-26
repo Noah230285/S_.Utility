@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -6,7 +7,6 @@ using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
-
 namespace _S.Editor.UIToolkitExtras
 {
     public class SpaceElement : VisualElement
@@ -603,3 +603,4 @@ namespace _S.Editor.UIToolkitExtras
 
     }
 }
+#endif
