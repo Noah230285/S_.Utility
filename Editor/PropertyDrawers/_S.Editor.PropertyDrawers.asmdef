@@ -9,9 +9,14 @@
         "GUID:c7f54ac0ccea45545be4c04564d25796",
         "GUID:705ae6a95bbd2b94e80edcb3f2e5c9ba",
         "GUID:657afcdf9e18b1848a51f5ef6b66a032",
-        "GUID:e99848c2c0cd2034bb1752b6179e8bd5"
+        "GUID:e99848c2c0cd2034bb1752b6179e8bd5",
+        "GUID:b134b43927a3e564f97904eff8c5d984",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:51a3873d09404be42ae4b9c913d10f73"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
