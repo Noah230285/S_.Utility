@@ -1,7 +1,7 @@
 {
   "name": "com.gameinvader.utility",
   "displayName": "The _S Utility Package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2021.3",
   "keywords": [
     "_S",
@@ -11,6 +11,7 @@
   "dependencies": {
     "com.unity.inputsystem": "1.4.4",
     "com.unity.visualeffectgraph": "12.1.7",
-    "com.unity.textmeshpro": "3.0.6"
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.addressables": "1.21.20"
   }
 }
